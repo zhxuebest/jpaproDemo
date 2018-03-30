@@ -1,0 +1,158 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	 <modelVersion>4.0.0</modelVersion>
+	 <groupId>com.xzj</groupId>
+	 <artifactId>JpaPro</artifactId>
+	 <version>0.0.1-SNAPSHOT</version>
+	 <name>JpaPro</name>
+	<properties>
+	    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <service-version>1.0.1-SNAPSHOT</service-version>
+        <java-version>1.8</java-version>
+
+        <spring-boot-version>1.4.3.RELEASE</spring-boot-version>
+        <spring-framework-version>4.3.2.RELEASE</spring-framework-version>
+
+        <!--工具包依赖-->
+        <apache-common-version>3.5</apache-common-version>
+        <guava-version>20.0</guava-version>
+        <org-apache-commons-version>3.3.2</org-apache-commons-version>
+        <jackson-version>2.4.4</jackson-version>
+        <joda-time-version>2.7</joda-time-version>
+
+        <!--数据库操作依赖版本定义-->
+        <mybatis-version>3.3.0</mybatis-version>
+        <HikariCP-version>2.5.1</HikariCP-version>
+        <mybatis-spring-version>1.3.0</mybatis-spring-version>
+        <mysql-version>5.1.34</mysql-version>
+
+        <!--测试依赖版本定义-->
+        <junit-version>4.12</junit-version>
+        <mockito-version>2.0.2-beta</mockito-version>
+	</properties>
+	<dependencies>
+
+      
+		
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>${org-apache-commons-version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>joda-time</groupId>
+            <artifactId>joda-time</artifactId>
+            <version>${joda-time-version}</version>
+        </dependency>
+        <!--spring boot依赖-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot</artifactId>
+            <version>${spring-boot-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+            <version>${spring-boot-version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <version>${spring-boot-version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-redis</artifactId>
+            <version>${spring-boot-version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>${spring-boot-version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+            <version>${spring-boot-version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <version>${spring-boot-version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${spring-framework-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>${spring-framework-version}</version>
+            <scope>test</scope>
+        </dependency>
+        <!--连接池依赖-->
+        <dependency>
+            <groupId>com.zaxxer</groupId>
+            <artifactId>HikariCP</artifactId>
+            <version>${HikariCP-version}</version>
+        </dependency>
+
+
+        <!--测试依赖-->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit-version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-all</artifactId>
+            <version>${mockito-version}</version>
+        </dependency>
+
+        <!--mybatis genertor-->
+        <dependency>
+            <groupId>org.mybatis.generator</groupId>
+            <artifactId>mybatis-generator-core</artifactId>
+            <version>1.3.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.codehaus.plexus</groupId>
+            <artifactId>plexus</artifactId>
+            <version>4.0</version>
+            <type>pom</type>
+        </dependency>
+
+        <!-- redis -->
+		<dependency>
+			<groupId>redis.clients</groupId>
+			<artifactId>jedis</artifactId>
+			<version>2.8.1</version>
+		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+		    <artifactId>mysql-connector-java</artifactId>
+		    <version>5.1.34</version>
+	    </dependency>
+  
+		
+		<!-- mq -->
+		<dependency>
+		   <groupId>org.springframework.amqp</groupId>
+		   <artifactId>spring-rabbit</artifactId>
+		   <version>1.6.3.RELEASE</version>
+		</dependency>
+    </dependencies>
+
+
+   
+</project>
+
