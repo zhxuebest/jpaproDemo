@@ -30,11 +30,7 @@
         <mockito-version>2.0.2-beta</mockito-version>
 	</properties>
 	<dependencies>
-	<dependency>
-        <groupId>org.apache.commons</groupId>
-        <artifactId>commons-lang3</artifactId>
-        <version>${org-apache-commons-version}</version>
-    </dependency>
+
     
 	<dependency>
 	  <groupId>com.github.zhxuebest</groupId>
@@ -145,14 +141,6 @@
 		    <artifactId>mysql-connector-java</artifactId>
 		    <version>5.1.34</version>
 	    </dependency>
-  
-		
-		<!-- mq -->
-		<dependency>
-		   <groupId>org.springframework.amqp</groupId>
-		   <artifactId>spring-rabbit</artifactId>
-		   <version>1.6.3.RELEASE</version>
-		</dependency>
     </dependencies>
 </project>
 
