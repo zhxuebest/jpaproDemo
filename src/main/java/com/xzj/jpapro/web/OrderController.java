@@ -43,4 +43,12 @@ public class OrderController {
 
 		return orderService.findbyId(id);
 	}
+	
+	@RequestMapping(value = "/test", method = RequestMethod.GET)
+	public @ResponseBody Order test() throws IllegalArgumentException, IllegalAccessException {		
+		//根据Id查询
+		Order order = new Order();
+		order.setId(2l);
+		return orderService.findbyObj(order).get(0);
+	}
 }

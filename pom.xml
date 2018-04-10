@@ -35,11 +35,12 @@
         <artifactId>commons-lang3</artifactId>
         <version>${org-apache-commons-version}</version>
     </dependency>
+    
 	<dependency>
-           <groupId>com.github.zhxuebest</groupId>
-		<artifactId>JpaPro</artifactId>
- 		<version>0.0.1-SNAPSHOT</version>
-       </dependency>
+	  <groupId>com.github.zhxuebest</groupId>
+	  <artifactId>JpaPro</artifactId>
+	  <version>0.0.1-RELEASE</version>
+	</dependency>
 
        <dependency>
            <groupId>joda-time</groupId>
@@ -153,8 +154,5 @@
 		   <version>1.6.3.RELEASE</version>
 		</dependency>
     </dependencies>
-
-
-   
 </project>
 
